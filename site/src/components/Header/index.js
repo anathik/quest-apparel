@@ -8,15 +8,16 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <NavLink text="Catalog" />
+        <NavLink text="Shop" />
         <NavLink text="On Sale" />
         <NavLink text="Archives" />
 
         <div className="Header-logo" style={{ backgroundImage: `url(${logoURL})`}} />
 
-        <NavLink text="Team" />
-        <NavLink text="Contact" />
         <NavLink text="News" />
+        <NavLink text="Team" />
+        <NavLink text="Contact Us" />
+
       </div>
     );
   }
