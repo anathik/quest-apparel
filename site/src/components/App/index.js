@@ -9,7 +9,7 @@ class App extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 650,
       slidesToShow: 1,
       slidesToScroll: 1
 
@@ -18,12 +18,12 @@ class App extends Component {
       <div className="App">
         <Header />
         <Slider className="Slider"{...settings}>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
+          <div id="Slide1"></div>
+          <div id="Slide2"></div>
+          <div id="Slide3"></div>
+          <div id="Slide4"></div>
+          <div id="Slide5"></div>
+          <div id="Slide6"></div>
         </Slider>
       </div>
     );

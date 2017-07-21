@@ -1,5 +1,8 @@
 .App {
+  max-width: 100vh;
+  min-width: 100vh;
   text-align: center;
+
 }
 
 .App-logo {
@@ -25,4 +28,40 @@
 
 .Slider {
   margin-top: 50px;
+  max-width: 100vw;
+  min-width: 100vw;
+  max-height: 87vh;
+  min-height: 87vh;
+}
+
+.Slide1 {
+  max-width: 100vw;
+  min-width: 100vw;
+  background: url('~/Documents/dev/gitrepos/quest-apparel/design/logo/Exports/Quest_Artist_Splash_Purple_Preview-01.png');
+  background-size: contain;
+}
+
+.Slide2 {
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.Slide3 {
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.Slide4 {
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.Slide5 {
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.Slide6 {
+  max-width: 100vw;
+  min-width: 100vw;
 }
