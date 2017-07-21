@@ -1,0 +1,28 @@
+.NavLink {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'News Cycle', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px 0px 18px;
+  font-size: 11px;
+  border-bottom: 1px solid #F5494F;
+  letter-spacing: 2px;
+  transition-duration: .5s;
+  transition-property: color background border-bottom;
+  cursor: pointer;
+}
+
+.NavLink:hover {
+  text-transform: uppercase;
+  color: black;
+  background: white;
+  font-family: 'News Cycle', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px 3px 18px;
+  font-size: 11px;
+  border-bottom: 3px solid #F5494F;
+  letter-spacing: 2px;
+  cursor: pointer;
+}

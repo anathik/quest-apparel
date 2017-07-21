@@ -1,0 +1,24 @@
+.Header {
+  background: #F5494F;
+  color: #fff;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.Header-logo {
+  min-width: 127px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: 3px;
+
+}

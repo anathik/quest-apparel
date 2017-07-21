@@ -1,0 +1,13 @@
+.StyleSquare {
+  text-transform: uppercase;
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  min-width: 20%;
+  max-width: 20%;
+  min-height: 30%;
+  max-height: 28%;
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+}
