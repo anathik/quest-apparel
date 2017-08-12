@@ -1,8 +1,7 @@
 .Header {
-  background: #F5494F;
+  background: #f78f47;
   color: #fff;
-  height: 50px;
-  font-family: 'Open Sans', sans-serif;
+  height: 58px;
   display: flex;
   justify-content: center;
   background-position: center center;
@@ -13,12 +12,25 @@
 }
 
 .Header-logo {
-  min-width: 127px;
+  min-width: 190px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
-  margin-left: 34px;
-  margin-right: 34px;
-  margin-top: 3px;
+  margin-bottom: 9px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
+.Widgets {
+  position: absolute;
+  align-items: center;
+  min-width: 4vh;
+  max-width: 4vh;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(219, 84, 45, 0.61),
+    rgba(247, 143, 71, 0.30)
+  );
 }
