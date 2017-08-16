@@ -1,30 +1,74 @@
-import React, { Component } from 'react';
-import Slider from 'react-slick';
-import './index.css';
+import React, { Component } from "react";
+import "./index.css";
 
-import Header from '../Header'
+import { Carousel, Slide } from "../Carousel";
+import Header from "../Header";
 
 class App extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+  constructor() {
+    super();
 
+    this.carouselInterval = null;
+
+    this.state = {
+      visibleSlideIndex: 0
     };
+  }
+
+  componentDidMount() {
+    this.scheduleIntervalTimeout();
+  }
+
+  onIntervalTimeout() {
+    this.setState({
+      visibleSlideIndex: this.state.visibleSlideIndex + 1
+    });
+    console.log("Interval was called");
+    this.scheduleIntervalTimeout();
+  }
+
+  scheduleIntervalTimeout() {
+    this.carouselInterval = setTimeout(this.onIntervalTimeout.bind(this), 5000);
+  }
+
+  clickPrevious() {
+    clearTimeout(this.carouselInterval);
+    this.setState(
+      {
+        visibleSlideIndex: this.state.visibleSlideIndex - 1
+      },
+      () => {
+        this.scheduleIntervalTimeout();
+      }
+    );
+  }
+
+  clickNext() {
+    clearTimeout(this.carouselInterval);
+    this.setState(
+      {
+        visibleSlideIndex: this.state.visibleSlideIndex + 1
+      },
+      () => {
+        this.scheduleIntervalTimeout();
+      }
+    );
+  }
+
+  render() {
     return (
       <div className="App">
         <Header />
-        <Slider className="Slider"{...settings}>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
-        </Slider>
+        <Carousel
+          visibleSlideIndex={this.state.visibleSlideIndex}
+          onNextRequested={this.clickNext.bind(this)}
+          onPreviousRequested={this.clickPrevious.bind(this)}
+        >
+          <Slide color="red" text="hello" />
+          <Slide color="blue" text="my name" />
+          <Slide color="green" text="is jeff" />
+          <Slide color="pink" text="notice me" />
+        </Carousel>
       </div>
     );
   }

@@ -1,0 +1,95 @@
+.Carousel {
+  margin-top: 8px;
+  min-height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.Carousel-slides {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 600ms;
+}
+
+.Carousel-slide {
+  flex: 1;
+}
+
+.Bubble-space {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.Bubble {
+  border-radius: 50%;
+  max-width: 9px;
+  min-width: 9px;
+  min-height: 9px;
+  max-height: 9px;
+  background: #fff;
+  margin: 0 8px 0 8px;
+  opacity: .5;
+}
+
+.Bubble-selected {
+  opacity: 1;
+}
+
+.Carousel-prev,
+.Carousel-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  justify-content: center;
+  opacity: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background: rgba(260, 260, 260, 0.1);
+  transition-duration: .5s;
+  transition-property: opacity;
+  cursor: pointer;
+}
+
+ {
+  /*}.Carousel-next:hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  justify-content: center;
+  opacity: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background: rgba(260, 260, 260, 0.4);
+  transition-duration: 1s;
+  transition-property: opacity background;
+  cursor: pointer;
+}*/
+}
+
+.Carousel-prev {
+  left: 0;
+}
+
+.Carousel-next {
+  right: 0;
+}
+
+.Carousel-hovered .Carousel-prev {
+  opacity: 1;
+}
+
+.Carousel-hovered .Carousel-next {
+  opacity: 1;
+}
