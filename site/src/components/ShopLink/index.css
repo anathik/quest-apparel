@@ -1,0 +1,42 @@
+.ShopLink {
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.50);
+  min-height: 50px;
+  max-height: 50px;
+  font-family: 'OratorStd', sans-serif;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 1.00);
+  letter-spacing: 1px;
+  transition-duration: .7s;
+  transition-property: color background border-bottom;
+}
+
+.ShopLink:hover {
+  text-transform: lowercase;
+  color: #ffffff;
+  min-height: 50px;
+  max-height: 50px;
+  flex: 1;
+  background: #f78f47;
+  font-family: 'OratorStd', sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: OratorStd;
+  src: url("./OratorStd.otf") format("opentype");
+}

@@ -1,0 +1,18 @@
+.CopyrightRibbon {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  align-items: center;
+  background: #ffffff;
+}
+
+.Copyright {
+  text-transform: lowercase;
+  color: #f78f47;
+  font-family: 'OratorStd', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+}

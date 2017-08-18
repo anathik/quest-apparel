@@ -1,0 +1,17 @@
+.SectionHeader {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.HeaderLine {
+  height: 1px;
+  background: rgba(97, 97, 97, .5);
+  flex: 1;
+}
+.HeaderText {
+  font-family: 'OratorStd', sans-serif;
+  text-transform: lowercase;
+  font-size: 18px;
+  color: rgba(97, 97, 97, .5);
+  padding: 0 45px 0 45px;
+}

@@ -4,9 +4,12 @@
   font-family: 'OratorStd', sans-serif;
   display: flex;
   align-items: center;
-  padding: 3px 40px 0px 40px;
-  font-size: 12px;
-  border-bottom: 0 solid #f5494f;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3px 35px 0px 35px;
+  font-size: 11.5px;
+  border-bottom: 0 solid rgba(245, 73, 79, 0.00);
   letter-spacing: 2px;
   transition-duration: .5s;
   transition-property: color background border-bottom;
@@ -19,9 +22,11 @@
   font-family: 'OratorStd', sans-serif;
   display: flex;
   align-items: center;
-  padding: 3px 40px 3px 40px;
-  font-size: 12px;
-  border-bottom: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px 35px 3px 35px;
+  font-size: 11.5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.00);
   letter-spacing: 2px;
   cursor: pointer;
 }

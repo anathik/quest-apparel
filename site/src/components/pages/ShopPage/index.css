@@ -1,0 +1,180 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 58px;
+  overflow-y: hidden;
+}
+
+.HeaderSpace {
+  height: 58px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.PromoSpace {
+  height: 58px;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.CarouselSpace {
+  height: 280px;
+  display: flex;
+}
+
+.FullWidthButtonContainer {
+  display: flex;
+  height: 90px;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.FullWidthButtonContainerPadding {
+  display: flex;
+  top: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0 50px 0 50px;
+}
+
+.ShopConsoleSpace {
+  display: flex;
+  right: 0;
+  left: 0;
+  height: 1000px;
+}
+
+.SquareSpace {
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 800px;
+  display: flex;
+}
+
+.NewsSubscribeBarSpace {
+  display: flex;
+  right: 0;
+  left: 0;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+.FooterSpace {
+  display: flex;
+  right: 0;
+  left: 0;
+  max-height: 190px;
+  min-height: 190px;
+  overflow: hidden;
+}
+
+.CopyrightRibbonSpace {
+  display: flex;
+  max-width: 100vw;
+  min-width: 100vw;
+  max-height: 30px;
+  min-height: 30px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.SectionHeaderContainer {
+  height: 75px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.SectionHeaderWidth1 {
+  width: 500px;
+  left: 0;
+  position: absolute;
+}
+
+.SectionHeaderWidth2 {
+  width: 940px;
+  right: 0;
+  position: absolute;
+}
+
+.SectionHeaderWidth3 {
+  flex: 1;
+}
+
+.Square1 {
+  width: 490px;
+  height: 390px;
+  left: 0;
+  position: absolute;
+}
+
+.Square2 {
+  width: 490px;
+  height: 390px;
+  margin-top: 410px;
+  left: 0;
+  position: absolute;
+}
+
+.Square3 {
+  width: 930px;
+  height: 800px;
+  right: 0;
+  position: absolute;
+  display: flex;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-slider {
+  flex: 1;
+  overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Slider {
+  margin-top: 50px;
+  max-width: 100vw;
+  min-width: 100vw;
+  max-height: 87vh;
+  min-height: 87vh;
+}
+
+.Slide1 {
+  max-width: 100vw;
+  min-width: 100vw;
+  background: url('~/Documents/dev/gitrepos/quest-apparel/design/logo/Exports/Quest_Artist_Splash_Purple_Preview-01.png');
+  background-size: contain;
+}

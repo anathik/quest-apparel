@@ -1,0 +1,81 @@
+.ShopConsole {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ShopConsoleFilterBody {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.FilterBodyHeaderTitle {
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: 'OratorStd', sans-serif;
+  flex: 1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 52px;
+  overflow: hidden;
+}
+
+.FilterBodyHeader {
+  display: flex;
+  flex: 1;
+  min-height: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.ClothingBodyHeader {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  background: #dbcdcd;
+}
+
+.ClothingBodyContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  display: inline-block;
+}
+
+.ClothingBodyFooter {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  background: #dbcdcd;
+}
+
+.ClothingShowcaseContainer {
+  display: flex;
+  height: 900px;
+  width: 100%;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 0 50px 0 50px;
+}
+
+.ShopConsoleClothingBody {
+  display: flex;
+  flex: 4;
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}

@@ -1,77 +1,23 @@
-import React, { Component } from "react";
-import "./index.css";
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import { Carousel, Slide } from "../Carousel";
-import Header from "../Header";
+import SplashPage from '../pages/SplashPage'
+import ShopPage from '../pages/ShopPage'
 
-class App extends Component {
-  constructor() {
-    super();
-
-    this.carouselInterval = null;
-
-    this.state = {
-      visibleSlideIndex: 0
-    };
-  }
-
-  componentDidMount() {
-    this.scheduleIntervalTimeout();
-  }
-
-  onIntervalTimeout() {
-    this.setState({
-      visibleSlideIndex: this.state.visibleSlideIndex + 1
-    });
-    console.log("Interval was called");
-    this.scheduleIntervalTimeout();
-  }
-
-  scheduleIntervalTimeout() {
-    this.carouselInterval = setTimeout(this.onIntervalTimeout.bind(this), 5000);
-  }
-
-  clickPrevious() {
-    clearTimeout(this.carouselInterval);
-    this.setState(
-      {
-        visibleSlideIndex: this.state.visibleSlideIndex - 1
-      },
-      () => {
-        this.scheduleIntervalTimeout();
-      }
-    );
-  }
-
-  clickNext() {
-    clearTimeout(this.carouselInterval);
-    this.setState(
-      {
-        visibleSlideIndex: this.state.visibleSlideIndex + 1
-      },
-      () => {
-        this.scheduleIntervalTimeout();
-      }
-    );
-  }
-
-  render() {
-    return (
+const App = () => {
+  return (
+    <Router>
       <div className="App">
-        <Header />
-        <Carousel
-          visibleSlideIndex={this.state.visibleSlideIndex}
-          onNextRequested={this.clickNext.bind(this)}
-          onPreviousRequested={this.clickPrevious.bind(this)}
-        >
-          <Slide color="red" text="hello" />
-          <Slide color="blue" text="my name" />
-          <Slide color="green" text="is jeff" />
-          <Slide color="pink" text="notice me" />
-        </Carousel>
+        <Route exact path="/" component={SplashPage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route path="/shoplist" component={SplashPage} />
+        <Route path="/archives" component={SplashPage} />
+        <Route path="/sales" component={SplashPage} />
+        <Route path="/login" component={SplashPage} />
+        <Route path="/bag" component={SplashPage} />
       </div>
-    );
-  }
+    </Router>
+  )
 }
 
-export default App;
+export default App

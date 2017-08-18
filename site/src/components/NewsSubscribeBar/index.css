@@ -1,0 +1,90 @@
+.NewsSubscribeBar {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  max-height: 100%;
+}
+.NewsSubscribeBarMessage {
+  display: flex;
+  left: 0;
+  flex: 1;
+  height: 100%;
+  background: #f78f47;
+  text-transform: lowercase;
+  color: #ffffff;
+  font-family: 'OratorStd', sans-serif;
+  font-size: 13px;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.SubMessage {
+  height: 100%;
+  line-height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-right: 25px;
+}
+
+.NewsSubscribeBarEmail {
+  display: flex;
+  right: 0;
+  flex: 1;
+  height: 100%;
+  background: #f78f47;
+}
+
+.SubscriberEmail {
+  text-transform: lowercase;
+  left: 0;
+  color: rgba(255, 255, 255, 0.71);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 84, 45, 0.45),
+    rgba(247, 143, 71, 0.45)
+  );
+  min-width: 80%;
+  max-width: 80%;
+  font-family: 'OratorStd', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.SubscriberEmail:focus {
+  text-transform: lowercase;
+  left: 0;
+  color: rgba(255, 255, 255, 0.71);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 84, 45, 0.45),
+    rgba(247, 143, 71, 0.45)
+  );
+  min-width: 80%;
+  max-width: 80%;
+  font-family: 'OratorStd', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 0 0 0 25px;
+  border: none;
+  outline: none;
+  cursor: default;
+}
+
+.SubscriberEmail::-moz-placeholder {
+  text-transform: lowercase;
+  left: 0;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 84, 45, 0.45),
+    rgba(247, 143, 71, 0.45)
+  );
+}

@@ -1,6 +1,5 @@
 .Carousel {
-  margin-top: 8px;
-  min-height: 40vh;
+  flex: 1;
   overflow: hidden;
   position: relative;
 }
@@ -17,6 +16,8 @@
 
 .Carousel-slide {
   flex: 1;
+  background-size: cover;
+  background-position: center center;
 }
 
 .Bubble-space {
@@ -25,7 +26,7 @@
   position: absolute;
   width: 100%;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .Bubble {
@@ -34,13 +35,28 @@
   min-width: 9px;
   min-height: 9px;
   max-height: 9px;
-  background: #fff;
-  margin: 0 8px 0 8px;
+  background: rgba(260, 260, 260, 0.7);
+  margin: 0 13px 0 13px;
   opacity: .5;
+  transition: background opacity;
+  transition-duration: 300ms;
+}
+
+.Bubble:hover {
+  border-radius: 50%;
+  max-width: 9px;
+  min-width: 9px;
+  min-height: 9px;
+  max-height: 9px;
+  background: rgba(255, 255, 250, 1);
+  margin: 0 13px 0 13px;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .Bubble-selected {
   opacity: 1;
+  background: #f78f47;
 }
 
 .Carousel-prev,
@@ -48,20 +64,37 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50px;
+  width: 100px;
   justify-content: center;
   opacity: 0;
   z-index: 100;
   display: flex;
   align-items: center;
-  background: rgba(260, 260, 260, 0.1);
-  transition-duration: .5s;
+  background: rgba(260, 260, 260, 0);
+  transition-duration: .7s;
   transition-property: opacity;
   cursor: pointer;
 }
 
- {
-  /*}.Carousel-next:hover {
+.material-icons {
+  font-size: 45px;
+  color: #f78f47;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgba(260, 260, 260, 0);
+  transition-property: color, background;
+  transition-duration: 300ms;
+}
+
+.material-icons:hover {
+  font-size: 45px;
+  color: #fff;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgba(260, 260, 260, 0.3);
+}
+
+/*}.Carousel-next:hover {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -76,7 +109,6 @@
   transition-property: opacity background;
   cursor: pointer;
 }*/
-}
 
 .Carousel-prev {
   left: 0;

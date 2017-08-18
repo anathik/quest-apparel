@@ -1,60 +1,70 @@
-import React, { Component } from "react";
-import "./index.css";
+import React, { Component } from 'react'
+import './index.css'
 
 export class Carousel extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      hovered: false
-    };
+      hovered: false,
+    }
   }
 
   hoverHandler() {
-    this.setState({ hovered: true });
+    this.setState({ hovered: true })
   }
 
   unhoverHandler() {
-    this.setState({ hovered: false });
+    this.setState({ hovered: false })
   }
 
-  clickBubble() {
-    console.log(index);
+  onBubbleClick(bubbleIndex) {
+    if (!this.props.onSlideRequested) {
+      return
+    }
+
+    this.props.onSlideRequested(bubbleIndex)
   }
 
   renderDots(selectedIndex, slideCount) {
-    const dotDivs = [];
+    const dotDivs = []
     for (let i = 0; i < slideCount; i++) {
-      let className = "Bubble";
+      let className = 'Bubble'
       if (selectedIndex === i) {
-        className += " Bubble-selected";
+        className += ' Bubble-selected'
       }
 
-      dotDivs.push(<div className={className} key={i} />);
+      dotDivs.push(
+        <div
+          className={className}
+          key={i}
+          onClick={this.onBubbleClick.bind(this, i)}
+        />
+      )
     }
+
     return (
       <div className="Bubble-space">
         {dotDivs}
       </div>
-    );
+    )
   }
 
   render() {
-    const { children, visibleSlideIndex } = this.props;
-    const slides = children.filter(el => el.type === Slide);
-    const index = !isNaN(visibleSlideIndex) ? visibleSlideIndex : 0;
-    const boundedIndex = Math.abs(index) % slides.length;
-    let carouselClassName = "Carousel";
+    const { children, visibleSlideIndex } = this.props
+    const slides = children.filter(el => el.type === Slide)
+    const index = !isNaN(visibleSlideIndex) ? visibleSlideIndex : 0
+    const boundedIndex = Math.abs(index) % slides.length
+    let carouselClassName = 'Carousel'
 
     if (this.state.hovered === true) {
-      carouselClassName += " Carousel-hovered";
+      carouselClassName += ' Carousel-hovered'
     }
 
     return (
       <div
         className={carouselClassName}
         onMouseEnter={this.hoverHandler.bind(this)}
-        onMouseLeave={this.unhoverHandler.bind(this)}
-      >
+        onMouseLeave={this.unhoverHandler.bind(this)}>
         <div className="Carousel-prev" onClick={this.props.onPreviousRequested}>
           <i className="material-icons">keyboard_arrow_left</i>
         </div>
@@ -66,28 +76,26 @@ export class Carousel extends Component {
           className="Carousel-slides"
           style={{
             transform: `translateX(${boundedIndex * (-100 / slides.length)}%)`,
-            width: `${slides.length * 100}%`
-          }}
-        >
-          {slides.map(slide => {
-            const color = slide.props.color;
-            const text = slide.props.text;
+            width: `${slides.length * 100}%`,
+          }}>
+          {slides.map((slide, i) => {
+            const { backgroundImageURL, text } = slide.props
 
             return (
               <div
+                key={i}
                 className="Carousel-slide"
-                style={{ backgroundColor: color }}
-              >
+                style={{ backgroundImage: `url(${backgroundImageURL})` }}>
                 {text}
               </div>
-            );
+            )
           })}
         </div>
 
         {this.renderDots(boundedIndex, slides.length)}
       </div>
-    );
+    )
   }
 }
 
-export const Slide = props => null;
+export const Slide = props => null

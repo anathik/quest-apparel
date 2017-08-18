@@ -1,0 +1,58 @@
+.Footer {
+  display: flex;
+  min-height: 100%;
+  min-height: 100%;
+  flex: 1;
+  background: #9e9d9d;
+  justify-content: center;
+}
+
+.FooterSection1,
+.FooterSection2,
+.FooterLogo,
+.FooterSection3,
+.FooterSection4 {
+  min-height: 100%;
+  max-height: 100%;
+  flex: 1;
+  display: flex;
+  display: inline-block;
+  letter-spacing: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 35px 0 15px 65px;
+}
+
+.FooterCatagory {
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.91);
+  font-family: 'OratorStd', sans-serif;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.FooterLogo {
+  background-image: url('./Quest_Artist_Splash-01.png');
+  background-size: cover;
+  background-position: center center;
+  flex: 0;
+  min-width: 250px;
+  min-height: 100%;
+}
+
+.FooterLink {
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: 'OratorStd', sans-serif;
+  font-size: 12px;
+  height: 10%;
+  list-style: none;
+  padding-top: 5px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.FooterLink:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
