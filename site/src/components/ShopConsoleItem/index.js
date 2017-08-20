@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 
-class StyleSquare extends Component {
+class ShopConsoleItem extends Component {
   render() {
     const { backgroundImageURL, text, subtext } = this.props
     // const background = this.props.background
@@ -9,13 +9,13 @@ class StyleSquare extends Component {
 
     return (
       <div
-        className="StyleSquare"
+        className="ShopConsoleItem"
         style={{ backgroundImage: `url(${backgroundImageURL})` }}>
-        <div id="ContentContainer" className="StyleSquareHover">
-          <div id="SquareHeader" className="StyleSquareHover">
+        <div id="ShopContentContainer" className="ShopConsoleItemHover">
+          <div id="ShopConsoleItemHeader" className="ShopConsoleItemHover">
             {text}
           </div>
-          <div id="SquareDetails" className="StyleSquareHover">
+          <div id="ShopConsoleItemDetails" className="ShopConsoleItemHover">
             {subtext}
           </div>
         </div>
@@ -24,4 +24,4 @@ class StyleSquare extends Component {
   }
 }
 
-export default StyleSquare
+export default ShopConsoleItem

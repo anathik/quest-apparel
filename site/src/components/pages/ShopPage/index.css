@@ -48,8 +48,9 @@
 .ShopConsoleSpace {
   display: flex;
   right: 0;
+  flex-direction: column;
   left: 0;
-  height: 1000px;
+  flex: 1;
 }
 
 .SquareSpace {

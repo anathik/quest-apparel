@@ -1,50 +1,55 @@
-.StyleSquare {
+.ShopConsoleItem {
+  display: flex;
   background-size: cover;
   background-position: center center;
-  display: flex;
+  background: rgba(220, 220, 220, 0.50);
   flex: 1;
-  height: 100%;
+  min-height: 250px;
+  min-width: 250px;
+  max-height: 252px;
+  max-width: 252px;
+  box-sizing: border-box;
+  margin: 5px;
 }
 
-#ContentContainer {
+#ShopContentContainer {
   display: flex;
   flex: 1;
   background: rgba(56, 56, 56, 0);
   background-size: cover;
   cursor: auto;
   transition-property: background;
-  transition-duration: 300ms;
+  transition-duration: 600ms;
 }
 
-#ContentContainer:hover {
+#ShopContentContainer:hover {
   background: rgba(56, 56, 56, 0.40);
   cursor: pointer;
   transition-property: background;
-  transition-duration: 300ms;
+  transition-duration: 600ms;
 }
 
-#ContentContainer:hover .StyleSquareHover {
+#ShopContentContainer:hover .ShopConsoleItemHover {
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
 
-#SquareHeader {
+#ShopConsoleItemHeader {
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-family: 'OratorStd', sans-serif;
-  font-size: 24px;
+  font-size: 15px;
   text-transform: lowercase;
   letter-spacing: 1px;
-  position: absolute;
   flex: 1;
   left: 0;
   right: 0;
-  top: 41%;
+  box-sizing: border-box;
   transition-property: color;
   transition-duration: 300ms;
 }
 
-#SquareDetails {
+#ShopConsoleDetails {
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-family: 'OratorStd', sans-serif;

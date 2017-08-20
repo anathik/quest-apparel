@@ -76,7 +76,8 @@
   cursor: pointer;
 }
 
-.material-icons {
+.Carousel-prev .material-icons,
+.Carousel-next .material-icons {
   font-size: 45px;
   color: #f78f47;
   margin: 5px;
@@ -86,7 +87,8 @@
   transition-duration: 300ms;
 }
 
-.material-icons:hover {
+.Carousel-prev .material-icons:hover,
+.Carousel-next .material-icons:hover {
   font-size: 45px;
   color: #fff;
   margin: 5px;
