@@ -1,30 +1,32 @@
 import React, { Component } from 'react'
 import './index.css'
 import logoURL from './Quest_NavBar_Logo.png'
-import bagURL from './ic_search_white_24dp_1x.png'
-
 import NavLink from '../NavLink'
 
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
+      <div className="navigation-bar">
+        <div className="navigation-left-container"> 
+          <NavLink text="Archives" path="/archives" />
+          <NavLink text="Shop" path="/shop" />
+          <NavLink text="Home" path="/" />
+          <div className="navigation-widgets-left">
+            <i className="material-icons" id="account">account_circle</i>
+          </div>
+        </div>
         <div
-          className="Header-logo"
+          className="header-logo"
           style={{ backgroundImage: `url(${logoURL})` }}
         />
-        <div className="HeaderLeftOfLogo">
-          <NavLink text="Shop" path="/shop" />
-          <NavLink text="Shop List" path="/shoplist" />
-          <NavLink text="Archives" path="/archives" />
-        </div>
-        <div className="HeaderRightOfLogo">
-          <NavLink text="On Sale" path="/sales" />
-          <NavLink text="Login / Join" path="/login" />
+        <div className="navigation-right-container">
+          <NavLink text="Sales" path="/sales" />
+          <NavLink text="Login" path="/login" />
           <NavLink text="My Bag" path="/bag" />
-        </div>
-        <div className="Widgets">
-          <div className="Bag" style={{ backgroundImage: `url(${bagURL})` }} />
+          <div className="navigation-widgets-right">
+            <i className="material-icons" id="share">share</i>
+            <i className="material-icons" id="search">search</i>
+          </div>
         </div>
       </div>
     )

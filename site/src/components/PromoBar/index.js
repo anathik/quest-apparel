@@ -3,16 +3,12 @@ import './index.css'
 
 const PromoBar = props => {
   return (
-    <div className="PromoBar">
-      <div className="PromoGarnish1" />
-      <div className="PromoContent">
-        <div className="Promotion">
-          {props.text}
-        </div>
+    <div className="promotion-bar">
+      <div className="promotion-message">
+        {props.text}
       </div>
-      <div className="PromoGarnish2" />
-      <div className="PromoCloser">
-        <i className="material-icons" id="PromoCloser" />
+      <div className="promotion-bar-close">
+        <i className="material-icons" id="close">close</i>
       </div>
     </div>
   )

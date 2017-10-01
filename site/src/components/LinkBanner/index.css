@@ -1,0 +1,72 @@
+.link-banner {
+     background: rgb(255, 255, 255);
+     height: 253px;
+     display: flex;
+     flex-direction: column;
+     left: 0;
+     right: 0;
+     top: 0;
+     justify-content: center;
+     overflow: hidden;
+     box-sizing: border-box;
+   }
+
+.link-banner-content-container {
+     flex: 1;
+     color: #f78f47;
+     font-size: 30px;
+     font-family: 'OratorStd', sans-serif;
+     text-transform: lowercase;
+     letter-spacing: 1px;
+     overflow: hidden;
+     box-sizing: border-box;
+}
+
+.link-banner-text-body,
+.link-banner-text-head
+{
+     margin: 5px 100px;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     color: rgba(0, 0, 0, 0.6);
+     font-size: 24px;
+     word-spacing: 9px;
+     font-family: 'OratorStd', sans-serif;
+     text-transform: lowercase;
+     letter-spacing: 3px;
+}
+
+.link-banner-text-body {
+     font-size: 19px;
+     font-weight: 100;
+     word-spacing: 3px;
+     letter-spacing: 1px;     
+}
+
+.link-banner-button-wrapper {
+     flex: 1;
+     bottom: 0;
+     height: 40px;     
+}
+
+.link-banner-top-line {
+     margin: 12px 0 1px 0;
+     flex: 1;
+     max-height: 1px;
+     min-height: 1px;     
+     background: #f78f47;     
+}
+
+.link-banner-bottom-line {
+     margin: 2px 0 12px 0;
+     flex: 1;
+     max-height: 1px;
+     min-height: 1px;     
+     background: #f78f47;     
+}
+
+.material-icons#quote {
+     color: #f78f47;
+     font-size: 32px;
+}

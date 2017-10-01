@@ -1,0 +1,77 @@
+.full-width-button-container {
+  background: rgba(0, 0, 0, .6);
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  height: 7.5vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  transition-property: background;
+  transition-duration: 500ms;
+}
+
+.full-width-button-container--hovered {
+  background: rgba(255, 255, 255, 0.8);
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  height: 7.5vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;  
+  align-content: center;  
+  justify-content: center;
+  transition-property: background;
+  transition-duration: 500ms;
+}
+
+.full-width-button-content {
+  display: flex;
+  cursor: pointer;  
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'OratorStd', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.full-width-button-content--hovered {
+  display: flex;
+  cursor: pointer;
+  color: #f78f47;
+  font-size: 12px;
+  font-family: 'OratorStd', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.material-icons #arrow_down {
+  cursor: pointer;  
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'OratorStd', sans-serif;
+  letter-spacing: 2px;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.material-icons #arrow_down--hovered {
+  cursor: pointer;    
+  color: #f78f47;
+  font-size: 12px;
+  font-family: 'OratorStd', sans-serif;
+  letter-spacing: 2px;
+  transition-property: color;
+  transition-duration: 500ms;
+}

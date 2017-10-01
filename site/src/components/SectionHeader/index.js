@@ -6,12 +6,12 @@ class SectionHeader extends Component {
     const { text } = this.props
 
     return (
-      <div className="SectionHeader">
-        <div className="HeaderLine" />
-        <div className="HeaderText">
+      <div className="section-header">
+        <div className="section-header-line" />
+        <div className="section-header-text">
           {text}
         </div>
-        <div className="HeaderLine" />
+        <div className="section-header-line" />
       </div>
     )
   }

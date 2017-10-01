@@ -1,30 +1,21 @@
-.App {
+
+.homepage {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   min-height: 100vh;
   box-sizing: border-box;
-  padding-top: 58px;
-  background: rgba(218, 218, 218, 0.40);
+  background: rgb(255, 255, 255);
 }
 
-.HeaderSpace {
-  height: 58px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
+::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
 }
 
-.PromoSpace {
-  height: 58px;
-  left: 0;
-  right: 0;
-  display: flex;
-}
-
-.CarouselSpace {
-  height: 280px;
+.carousel-container {
+  height: 85vh;
+  min-height: 500px;
   display: flex;
 }
 
@@ -63,26 +54,6 @@
   overflow: hidden;
 }
 
-.SectionHeaderContainer {
-  height: 75px;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-}
-
-.SectionHeaderWidth1 {
-  width: 500px;
-  left: 0;
-  position: absolute;
-}
-
-.SectionHeaderWidth2 {
-  width: 940px;
-  right: 0;
-  position: absolute;
-}
-
 .Square1 {
   width: 490px;
   height: 390px;
@@ -104,36 +75,6 @@
   right: 0;
   position: absolute;
   display: flex;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.App-slider {
-  flex: 1;
-  overflow: hidden;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .Slider {

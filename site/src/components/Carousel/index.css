@@ -11,7 +11,7 @@
   position: absolute;
   top: 0;
   transform: translateX(0);
-  transition: transform 600ms;
+  transition: transform 1200ms;
 }
 
 .Carousel-slide {

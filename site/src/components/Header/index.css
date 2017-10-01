@@ -1,52 +1,86 @@
-.Header {
+.navigation-bar {
   background: #f78f47;
-  color: #fff;
-  height: 58px;
+  min-height: 50px;
+  height: 7.5vh;
   display: flex;
-  background-position: center center;
   left: 0;
   right: 0;
   top: 0;
-  position: absolute;
   justify-content: center;
 }
 
-.Header-logo {
-  min-width: 300px;
-  max-width: 300px;
+.header-logo {
+  margin: 0 25px;
+  align-self: center;
+  max-width: 210px;
+  min-width: 210px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  position: absolute;
-  max-height: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
-.HeaderLeftOfLogo {
+.navigation-left-container {
   height: 100%;
   display: flex;
-  position: absolute;
-  right: 62%;
+  flex-direction: row-reverse; 
+  flex: 1;
+  left: 0;
 }
 
-.HeaderRightOfLogo {
+.navigation-right-container {
   height: 100%;
   display: flex;
-  position: absolute;
-  left: 62%;
-}
-
-.Widgets {
-  z-index: 3;
-  position: absolute;
-  align-items: center;
-  min-width: 35px;
-  max-width: 35px;
-  height: 100%;
+  flex: 1;
   right: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(219, 84, 45, 0.61),
-    rgba(247, 143, 71, 0.30)
-  );
 }
+
+.navigation-widgets-left {
+  margin-left: 10px;  
+  height: 50px;
+  left: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  display: flex;  
+  justify-content: center; 
+  align-items: center; 
+}
+
+.navigation-widgets-right {
+  margin-right: 10px;
+  height: 50px;
+  right: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  display: flex;  
+  justify-content: center; 
+  align-items: center;   
+}
+
+.material-icons#account,
+.material-icons#search,
+.material-icons#share 
+{
+  cursor: pointer;
+  color: #fff;
+  opacity: 1;  
+  font-size: 24px;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+.material-icons#account:hover,
+.material-icons#search:hover,
+.material-icons#share:hover 
+{
+  opacity: 0.4;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+
