@@ -8,14 +8,14 @@
 }
 .section-header-line {
   height: 1px;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.6);
   flex: 1;
 }
 .section-header-text {
   font-family: 'OratorStd', sans-serif;
   text-transform: lowercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.6);
   padding: 0 45px 0 45px;
 }

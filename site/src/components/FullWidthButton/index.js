@@ -9,6 +9,10 @@ class FullWidthButton extends Component {
     }
   }
 
+  onClickScroll() {
+    const element = document.getElementById("box");
+  }
+
   hoverHandler() {
     this.setState({ hovered: true })
   }
@@ -18,14 +22,14 @@ class FullWidthButton extends Component {
   }
   
   render() {
-    const { buttonText } = this.props
+    const { buttonText, scrollTarget } = this.props
     let buttonContainerClassName = 'full-width-button-container'
-    let buttonContainerContentClassName = 'full-width-button-content'
+    let buttonContentClassName = 'full-width-button-content'
     let buttonArrowDownClassName = 'arrow_down'    
-
+    
     if (this.state.hovered === true) {
       buttonContainerClassName = 'full-width-button-container--hovered'
-      buttonContainerContentClassName = 'full-width-button-content--hovered'
+      buttonContentClassName = 'full-width-button-content--hovered'
       buttonArrowDownClassName = 'arrow_down--hovered'
     }
      
@@ -36,9 +40,8 @@ class FullWidthButton extends Component {
       onMouseLeave={this.unhoverHandler.bind(this)}
       >
         <div 
-        className={buttonContainerContentClassName}
+        className={buttonContentClassName}
         onMouseEnter={this.hoverHandler.bind(this)}
-        onMouseLeave={this.unhoverHandler.bind(this)}
         >
           {buttonText}
         </div>
@@ -46,7 +49,6 @@ class FullWidthButton extends Component {
           className="material-icons"
           id={buttonArrowDownClassName}
           onMouseEnter={this.hoverHandler.bind(this)}
-          onMouseLeave={this.unhoverHandler.bind(this)}
           >
           keyboard_arrow_down
         </i>

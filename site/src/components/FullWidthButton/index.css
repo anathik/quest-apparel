@@ -14,7 +14,7 @@
 }
 
 .full-width-button-container--hovered {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.45);
   left: 0;
   right: 0;
   min-height: 50px;
@@ -29,49 +29,61 @@
 }
 
 .full-width-button-content {
-  display: flex;
+  left: 0;
+  right: 0;
+  transform: translateY(none);    
   cursor: pointer;  
-  color: #ffffff;
-  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
   font-family: 'OratorStd', sans-serif;
   text-transform: lowercase;
+  text-align: center;
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  transition-property: color;
+  transition-property: transform color;
   transition-duration: 500ms;
 }
 
 .full-width-button-content--hovered {
-  display: flex;
+  left: 0;
+  right: 0;
+  transform: translateY(3px);  
   cursor: pointer;
-  color: #f78f47;
-  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
   font-family: 'OratorStd', sans-serif;
+  text-align: center;  
   text-transform: lowercase;
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  transition-property: color;
+  transition-property: transform color;
   transition-duration: 500ms;
 }
 
-.material-icons #arrow_down {
+.material-icons#arrow_down {
+  left: 0;
+  right: 0;
+  transform: translateY(none);  
   cursor: pointer;  
-  color: #ffffff;
-  font-size: 12px;
-  font-family: 'OratorStd', sans-serif;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;  
+  font-size: 20px;
   letter-spacing: 2px;
-  transition-property: color;
+  transition-property: transform color;
   transition-duration: 500ms;
 }
 
-.material-icons #arrow_down--hovered {
+.material-icons#arrow_down--hovered {
+  left: 0;
+  right: 0;
+  transform: translateY(3px);
   cursor: pointer;    
-  color: #f78f47;
-  font-size: 12px;
-  font-family: 'OratorStd', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;  
+  font-size: 20px;
   letter-spacing: 2px;
-  transition-property: color;
+  transition-property: transform color;
   transition-duration: 500ms;
 }

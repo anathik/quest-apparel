@@ -12,6 +12,7 @@ import slide1dURL from './images/brookyln-1.jpg'
 //import styleSquare1bURL from './images/RVLT_StudioCampaignSS17_Ver_07.jpg'
 
 import { TimedCarousel, Slide } from '../../TimedCarousel'
+import ItemCarousel from '../../ItemCarousel'
 import Header from '../../Header'
 //import StyleSquare from '../../StyleSquare'
 import PromoBar from '../../PromoBar'
@@ -40,6 +41,7 @@ const SplashPage = () => {
       <FullWidthButton buttonText="Hot Collections"/>
         
       <SectionHeader text="Best Sellers" id="HotCollections" />   
+      <ItemCarousel buttonText="Hot Collections"/>
       <SectionHeader text="Collections" />
 
       {/*  Fix squares

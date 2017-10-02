@@ -1,33 +1,62 @@
 .NavLink {
   text-transform: lowercase;
-  color: #fff;
   font-family: 'OratorStd', sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;  
   text-align: center;
   text-decoration: none;
   justify-content: center;
   width: 8.5vw;
   font-size: 10.5px;
-  border-bottom: 0 solid rgba(245, 73, 79, 0.00);
   letter-spacing: 1px;
-  transition-duration: .5s;
+  transition-duration: 500ms;
   transition-property: color background border-bottom;
 }
 
 .NavLink:hover {
   text-transform: lowercase;
-  color: black;
   background: white;
   font-family: 'OratorStd', sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition-duration: 500ms;
+  transition-property: color background border-bottom;
+}
+
+.navigation-link-textbox {
+  transform: translateY(43%); 
+  height: 100%;
+  width: 100%; 
+  text-transform: lowercase;
+  font-family: 'OratorStd', sans-serif;
+  color: rgb(255, 255, 255);  
   text-align: center;
   text-decoration: none;
   font-size: 10.5px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.00);
   letter-spacing: 1px;
-  cursor: pointer;
+  transition-duration: 500ms;
+  transition-property: color background;
+}
+
+.navigation-link-textbox:hover {
+  transform: translateY(38%);
+  height: 100%;  
+  width: 100%;
+  text-transform: lowercase;
+  font-family: 'OratorStd', sans-serif;
+  color: rgba(0, 0, 0, 0.6);  
+  text-align: center;
+  text-decoration: none;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  transition-duration: 500ms;
+  transition-property: color background;
 }
 
 @font-face {

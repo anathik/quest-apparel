@@ -6,7 +6,9 @@ import './index.css'
 const NavLink = props => {
   return (
     <Link to={props.path} className="NavLink">
-      {props.text}
+      <div className="navigation-link-textbox">
+        {props.text}
+      </div>
     </Link>
   )
 }
