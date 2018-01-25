@@ -7,9 +7,11 @@ import ShopPage from '../pages/ShopPage'
 import './index.css'
 
 const App = () => {
+  console.log("LOL")
   return (
     <Router>
       <div className="App">
+        <ShopPage />
         <Route exact path="/" component={SplashPage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/shoplist" component={SplashPage} />
