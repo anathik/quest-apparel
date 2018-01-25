@@ -6,15 +6,15 @@ import slide1aURL from './images/Lower_Manhattan_skyline_from_Brooklyn_Heights_a
 import slide1bURL from './images/2-9-14_bryan_tt6c9109-edit-2.jpg'
 import slide1cURL from './images/3_wytheweddingphotography.jpg'
 import slide1dURL from './images/brookyln-1.jpg'
-//import slide2aURL from './images/RVLT_StudioCampaignSS17_Hor_01.jpg'
-//import slide2bURL from './images/brookyln-1.jpg'
-//import styleSquare1aURL from './images/RVLT_StudioCampaignSS17_Hor_01.jpg'
-//import styleSquare1bURL from './images/RVLT_StudioCampaignSS17_Ver_07.jpg'
+import slide2aURL from './images/RVLT_StudioCampaignSS17_Hor_01.jpg'
+import slide2bURL from './images/brookyln-1.jpg'
+import styleSquare1aURL from './images/RVLT_StudioCampaignSS17_Hor_01.jpg'
+import styleSquare1bURL from './images/RVLT_StudioCampaignSS17_Ver_07.jpg'
 
 import { TimedCarousel, Slide } from '../../TimedCarousel'
 import ItemCarousel from '../../ItemCarousel'
 import Header from '../../Header'
-//import StyleSquare from '../../StyleSquare'
+import StyleSquare from '../../StyleSquare'
 import PromoBar from '../../PromoBar'
 import SectionHeader from '../../SectionHeader'
 import Footer from '../../Footer'
@@ -41,10 +41,7 @@ const SplashPage = () => {
       <FullWidthButton buttonText="Hot Collections"/>
         
       <SectionHeader text="Best Sellers" id="HotCollections" />   
-      <ItemCarousel buttonText="Hot Collections"/>
-      <SectionHeader text="Collections" />
 
-      {/*  Fix squares
       <div className="SquareSpace">
         <div className="Square1">
           <StyleSquare
@@ -67,7 +64,6 @@ const SplashPage = () => {
           </TimedCarousel>
         </div>
       </div>
-      */}
       
       <div className="NewsSubscribeBarSpace">
         <NewsSubscribeBar />
