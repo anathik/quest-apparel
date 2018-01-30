@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import './index.css'
 
@@ -22,7 +22,10 @@ import CopyrightRibbon from '../../CopyrightRibbon'
 import NewsSubscribeBar from '../../NewsSubscribeBar'
 import FullWidthButton from '../../FullWidthButton'
 
-const SplashPage = () => {
+class SplashPage extends Component {
+  
+  
+  render() {
   return (
     <div className="homepage">
       
@@ -31,7 +34,7 @@ const SplashPage = () => {
       
       <div className="carousel-container">
         <TimedCarousel interval={10000}>
-          <Slide backgroundImageURL={slide1aURL} text="" />
+          <Slide backgroundImageURL={slide1aURL} text="" style={{backgroundImageURL: slide2aURL}}/>
           <Slide backgroundImageURL={slide1bURL} text="" />
           <Slide backgroundImageURL={slide1cURL} text="" />
           <Slide backgroundImageURL={slide1dURL} text="" />
@@ -43,25 +46,63 @@ const SplashPage = () => {
       <SectionHeader text="Best Sellers" id="HotCollections" />   
 
       <div className="SquareSpace">
-        <div className="Square1">
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1aURL}
+            text="Essential Sweater"
+            subtext="$39"
+          />
+          </div>
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1bURL}
+            text="A Grade White Guy"
+            subtext="$1,000,000"
+          />
+        </div>
+        <div className="Squares">
           <StyleSquare
             backgroundImageURL={styleSquare1aURL}
             text="Essential Sweater"
             subtext="$39"
           />
         </div>
-        <div className="Square2">
+        <div className="Squares">
           <StyleSquare
             backgroundImageURL={styleSquare1bURL}
+            text="This One's Expensive"
+            subtext="$5"
+          />
+        </div>
+      </div>
+      <div className="SquareSpace">
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1aURL}
+            text="Essential Sweater"
+            subtext="$39"
+          />
+          </div>
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1bURL}
+            text="A Grade White Guy"
+            subtext="$1,000,000"
+          />
+        </div>
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1aURL}
             text="Essential Sweater"
             subtext="$39"
           />
         </div>
-        <div className="Square3">
-          <TimedCarousel>
-            <Slide backgroundImageURL={slide2aURL} text="" />
-            <Slide backgroundImageURL={slide2bURL} text="" />
-          </TimedCarousel>
+        <div className="Squares">
+          <StyleSquare
+            backgroundImageURL={styleSquare1bURL}
+            text="This One's Expensive"
+            subtext="$5"
+          />
         </div>
       </div>
       
@@ -76,6 +117,7 @@ const SplashPage = () => {
       </div>
     </div>
   )
+}
 }
 
 export default SplashPage

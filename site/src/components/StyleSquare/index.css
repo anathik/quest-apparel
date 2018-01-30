@@ -2,23 +2,33 @@
   background-size: cover;
   background-position: center center;
   display: flex;
-  flex: 1;
-  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-width: 200px;
+  min-height: 200px;
+  height: 25vw;
+  width: 25vw;
+  cursor: pointer;
 }
 
 #ContentContainer {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   background: rgba(56, 56, 56, 0);
   background-size: cover;
   cursor: auto;
   transition-property: background;
   transition-duration: 300ms;
+  padding: 10%;
+  box-sizing: border-box;
 }
 
 #ContentContainer:hover {
   background: rgba(56, 56, 56, 0.40);
-  cursor: pointer;
   transition-property: background;
   transition-duration: 300ms;
 }
@@ -26,6 +36,8 @@
 #ContentContainer:hover .StyleSquareHover {
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .expand-square-modal {
@@ -45,36 +57,26 @@
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-#SquareHeader {
+#SquareHeader,
+#SquareDetails {
+  box-sizing: border-box;
+  padding: 38% 0 0 0;
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-family: 'OratorStd', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: lowercase;
   letter-spacing: 1px;
-  position: absolute;
   flex: 1;
-  left: 0;
-  right: 0;
-  top: 41%;
   transition-property: color;
   transition-duration: 300ms;
 }
 
 #SquareDetails {
-  color: rgba(255, 255, 255, 0);
-  text-align: center;
-  font-family: 'OratorStd', sans-serif;
-  font-size: 15px;
-  text-transform: lowercase;
-  letter-spacing: 1px;
-  position: absolute;
-  flex: 1;
-  left: 0;
-  right: 0;
-  bottom: 41%;
-  transition-property: color;
-  transition-duration: 300ms;
+  font-size: 14px;
+  padding: 0 0 18% 0;
 }

@@ -12,13 +12,6 @@ const App = () => {
     <Router>
       <div className="App">
         <SplashPage />
-        <Route exact path="/" component={SplashPage} />
-        <Route path="/shop" component={ShopPage} />
-        <Route path="/shoplist" component={SplashPage} />
-        <Route path="/archives" component={SplashPage} />
-        <Route path="/sales" component={SplashPage} />
-        <Route path="/login" component={SplashPage} />
-        <Route path="/bag" component={SplashPage} />
       </div>
     </Router>
   )

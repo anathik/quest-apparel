@@ -19,10 +19,21 @@
   display: flex;
 }
 
+.Squares {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 .SquareSpace {
   max-width: 100vw;
   min-width: 100vw;
-  height: 800px;
+  max-height: 25vw;
+  height: 25vw;
   display: flex;
 }
 
@@ -52,42 +63,4 @@
   min-height: 30px;
   justify-content: center;
   overflow: hidden;
-}
-
-.Square1 {
-  width: 490px;
-  height: 390px;
-  left: 0;
-  position: absolute;
-}
-
-.Square2 {
-  width: 490px;
-  height: 390px;
-  margin-top: 410px;
-  left: 0;
-  position: absolute;
-}
-
-.Square3 {
-  width: 930px;
-  height: 800px;
-  right: 0;
-  position: absolute;
-  display: flex;
-}
-
-.Slider {
-  margin-top: 50px;
-  max-width: 100vw;
-  min-width: 100vw;
-  max-height: 87vh;
-  min-height: 87vh;
-}
-
-.Slide1 {
-  max-width: 100vw;
-  min-width: 100vw;
-  background: url('~/Documents/dev/gitrepos/quest-apparel/design/logo/Exports/Quest_Artist_Splash_Purple_Preview-01.png');
-  background-size: contain;
 }
